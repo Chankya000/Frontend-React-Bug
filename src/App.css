@@ -1,0 +1,98 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	font-family: "Alegreya Sans SC", sans-serif;
+}
+
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.page,
+.page-main {
+	height: 100%;
+}
+
+.page-main {
+	display: flex;
+}
+
+.sidebar-drawer {
+	width: 320px;
+	height: 100%;
+	color: white;
+	background: linear-gradient(180deg, #d85907, #f06308, #f27321);
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.sidebar-drawer .logo {
+	height: 50px;
+}
+
+.sidebar-drawer .logo img {
+  height: 640px;
+}
+
+.sidebar-drawer .item {
+	margin-bottom: 16px;
+	cursor: pointer;
+	font-weight: 600;
+	position: relative;
+}
+
+.sidebar-drawer .item a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.page-main .page-body {
+	width: calc(100% - 320px);
+	background: #f6f5f7;
+	padding: 16px;
+	box-sizing: border-box;
+  z-index: 1;
+}
